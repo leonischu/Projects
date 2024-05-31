@@ -6,6 +6,7 @@ const MenuCard = ({menuData}) => {
     <section className="main-card--cointainer">
     {
         menuData.map((curEle)=>{
+            const {id,name,category,image,description}=curEle; // destructuring yo garesi curEle. garirakhnu pardaina
             return(<>   
                 <div className="card-container" key={curEle.id}>
                     <div className="card">
